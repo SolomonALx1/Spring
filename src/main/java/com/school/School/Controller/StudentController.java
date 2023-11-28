@@ -10,6 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/student")
+
+// student endpoints
 public class StudentController {
     private final StudentService studentService;
     public StudentController(StudentService studentService) {
@@ -33,7 +35,7 @@ public class StudentController {
         StudentResponseDto studentResponseDto = studentService.getStudentById(id);
         return new ResponseEntity<>(studentResponseDto,HttpStatus.OK);
     }
-    /** Update student endpoint using id **/
+    /** Update student endpoint using id  **/
     @PutMapping("/updateStudent{id}")
     public ResponseEntity<StudentResponseDto>  updateStudent(@PathVariable final Long id, @RequestBody final  StudentRequestDto studentRequestDto) {
         StudentResponseDto studentResponseDto = studentService.updateStudent(id, studentRequestDto);
