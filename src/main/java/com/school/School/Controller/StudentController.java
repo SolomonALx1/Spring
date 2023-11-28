@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/student")
 
-// student endpoints and
+// student endpoints anding
 public class StudentController {
     private final StudentService studentService;
     public StudentController(StudentService studentService) {
