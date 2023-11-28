@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/academic")
+// endpoint acadmic year endpoint
 public class AcademicYearController {
     private final AcademicYearService academicYearService;
 
